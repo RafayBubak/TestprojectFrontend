@@ -8,6 +8,23 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  /* font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', */
+    /* monospace; */
+    font-family: Avenir LT Pro,sans-serif;
+}
+
+/* ////////////Search menu section CSS */
+.container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.inner-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+}
+.hidden{
+  padding: 5px;
 }
