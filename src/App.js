@@ -1,14 +1,21 @@
-import logo from './logo.svg';
+
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './NavBar';
-import New from './New';
+import SearchBarComponent from './SearchBarComponent';
+import Filters from './Filters';
+import Categories from './Categories';
+// import ProdCertification from './ProdCertification'
 
 function App() {
   return (
     <div className="App">
-      {/* <Navbar /> */}
-      <New />
+      <Navbar />
+      <SearchBarComponent/>
+      <Filters />
+      <Categories text="abc"/>
+      {/* <ProdCertification/> */}
+      
     </div>
   );
 }

@@ -1,11 +1,11 @@
-body {
+/* body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
+} */
 
 code {
   /* font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', */
@@ -15,58 +15,188 @@ code {
 
 /* ////////////Search menu section CSS */
 .main-container{
-  border: 1px solid black;
-  background-color: lightgray;
+  /* border: 1px solid black; */
+  background-color: #F2F2F2;
   height: 70px;
   margin: auto;
   width: 90vw;
   border-radius: 10px;
+  margin-top: 15px;
 }
 .container{
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
-  padding: 15px;
-  /* width: inherit; */
+  padding: 10px;
 }
 .left-c-button{
   border-radius: 5px;
-  /* width: 20%; */
 }
 .icon{
   color: #39b2c3;;
   font-size: 25px;  ;
 }
 .input-div{
-  width: 80%;
   margin: auto;
-
   display: flex;
-  justify-content: space-between;
+  align-items:center;
 }
 
 .inputfield{
-  /* border:1px solid rgb(0, 0, 0); */
-  padding: 2px;
-  width: 70%;
-  /* background-color: red; */  
+  padding: 10px;
   border-radius: 50px;
-  
-  
+  width: 650px;  
+  flex-grow: 1;
 }
-.input-div > input{
+.input-div>input{
   flex:1;
   border: none;
 }
 
 .SearchSelection{
   border:none;
-  /* padding-left: 70px; */
-  background-color: aqua;
+  background-color: #ffffff;
   padding: 10px;
+  border-left: 1px solid gray;
+  border-radius: 50px;
+  color: rgb(118, 118, 118),;
 }
 .searchbutton{
-  border: 1px solid black;
+  color: white;
+  text-align: center;
+  padding: 6px 9px;
+  width: 110px;
+  border-radius: 20px;
+  background-color: #39b2c9;
+}
+
+/* ////Responsiveness///////////////// */
+
+/* @media  screen and (max-width: 1400px) {
+  .main-container {
+    height: 70px;
+    width: 90vw;
+    margin-top: 15px;
+  }
+  .container {
+    padding: 10px;
+    /* flex-direction: column; 
+  }
+
+  .left-c-button {
+    border-radius: 5px;
+  }
+
+  .icon {
+    font-size: 25px;
+  }
+
+  .inputfield {
+    width: 650px;
+  }
+
+  .SearchSelection {
+    padding: 10px;
+  }
+
+  .searchbutton {
+    padding: 6px 9px;
+    width: 110px;
+  }
+} */
+
+
+/* ////////////CSS FOR FILTERS COMPONENT//////////// */
+
+.main-div{
+  width: 30%;
+  padding: 20px;
+}
+.CatSearch{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  
+}
+.CatSearch > input{
+  flex: 1;
+  padding: 5px 10px;
+  border-radius: 35px;
+  border: 0.5px solid #BDC2C3;
+  background-color: #F2F2F2;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 350;
+  width: 270px;
+  outline: none;
+}
+
+/* ////////////Categories component styles///////////// */
+
+.Catlist >li{
+  list-style-type: square;
+  size: 30px;
+}
+.Categories{
+  display: flex;
+  align-items:flex-start;
+  justify-content: flex-start;
+}
+
+
+/* ////////////PriceComponent Css/////// */
+
+.m-container{
+  padding-top: 20px;
+}
+.firstinput{
+  display: flex;
+  align-items: center;
+  width: 130px;
+  
+}
+.firstinput > input{
+  
+  width: 100%;
+  padding: 8px;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  background-color: #F2F2F2;
+  text-align: center;
+  /* margin: 0px 10px; */
+  
+}
+.divs-container{
+  display: flex;
+  align-items: center;
+}
+
+/* ///////////MOQ CSS/////////////////// */
+.MOQinput > input{
+  width: 100%;
   padding: 10px;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  background-color: #F2F2F2;
+  text-align: center;
+  /* margin: 0px 10px; */
+}
+
+
+/* //////////////product certification ////////// */
+
+.proSearch > input{
+  flex: 1;
+  padding: 5px 10px;
+  border-radius: 35px;
+  border: 0.5px solid #BDC2C3;
+  background-color: #F2F2F2;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 350;
+  width: 270px;
+  outline: none;
 }
