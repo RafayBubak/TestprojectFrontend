@@ -1,26 +1,24 @@
 import React from 'react';
 
-function Categories(props) {
-  const categories = [
-    {
-      name:props.text,
-    },
-    {
-      name:"PPE",
-    },
-    {
-      name:"PPE",
-    },
-    {
-      name:"PPE",
-    }
-  ];
+function Categories({categories}) {
+  // const categories = [
+  //   {
+  //     name:props.text,
+  //   },
+  //   {
+  //     name:"PPE",
+  //   },
+  //   {
+  //     name:"PPE",
+  //   },
+  //   {
+  //     name:"PPE",
+  //   }
+  // ];
 
 
   return (
-    <div>
-      {/* <h2>Categories:</h2> */}
-      {/* <p>{props.text}</p> */}
+    <div className='Catgorytest'>
       <ul>
         {categories.map((category) => (
           <ul className='Catlist'>

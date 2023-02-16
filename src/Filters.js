@@ -1,24 +1,29 @@
 import React from 'react'
 // import { GoSearch } from "react-icons/go";
-// import Categories from './Categories'
+import Categories from './Categories'
 import PriceComponent from './PriceComponent'
 import MOQcomponent from './MOQcomponent'
 import ProdCertification from './ProdCertification'
+import SupplierCertification from './SupplierCertification'
+import ManufacturerLocation from './ManufacturerLocation'
+import StockAvailability from './StockAvailability'
 
 export default function Filters() {
   return (
     <div className='main-div'>
         <div className='CatSearch'>
             <input type="text" placeholder='More Categories'></input>
-            {/* <i className='searchicon'> <GoSearch/> </i> */}
-            <div className='Categories'>
+            {/* <div className='Categories'> </div> */}
             
-            </div>
+            <Categories categories={[{name:"PPE"},{name:"Face Mask"},{name:"Gloves"}]} />
             <PriceComponent/>
             <MOQcomponent/>
-            <ProdCertification/>
+            <ProdCertification />
+            <SupplierCertification/>
+            <ManufacturerLocation/>
+            <StockAvailability/>
             
-        </div>
+           </div>
         
     </div>
   )
