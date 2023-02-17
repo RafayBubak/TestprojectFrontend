@@ -6,13 +6,11 @@ export default function PriceComponent() {
         <p>Price</p>
         <div className='divs-container'>
             <div className='firstinput'>
-                <input type="text" placeholder='From'></input> 
-                {/* <span className='signspan'>$</span> */}
+                <input type="text" placeholder='From'></input>  
             </div>
             <span>_</span>
             <div className='firstinput'>
                 <input type="text" placeholder='To'></input> 
-                {/* <span className='signspan'>$</span> */}
             </div>
         </div>    
     </div>
