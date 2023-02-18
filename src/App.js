@@ -2,25 +2,30 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './NavBar';
-import SearchBarComponent from './SearchBarComponent';
+// import SearchBarComponent from './SearchBarComponent';
 // import Filters from './Filters';
-import MainComponent from './MainComponent';
-// import ProductList from './ProductList';
+// import MainComponent from './MainComponent';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import MainContainerComponent from './MainContainerComponent';
 
 
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <SearchBarComponent/>
-      {/* <Filters /> */}
-      <MainComponent />
-      {/* <ProductList/> */}
-      
-      
-      
-    </div>
+    <Router>
+      <div className="App">
+        <Navbar />
+        <Routes>
+          <Route path="/:id" element=
+        
+            
+            {<MainContainerComponent/>}
+          
+           />
+        </Routes>
+
+      </div>
+    </Router>
   );
 }
 

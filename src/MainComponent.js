@@ -2,7 +2,7 @@ import React from 'react'
 import Filters from './Filters'
 import ProductList from './ProductList'
 
-export default function MainComponent() {
+export default function MainComponent({products}) {
   return (
     <div className='mainwrapper'>
        <div className="sidefilters">
@@ -13,7 +13,7 @@ export default function MainComponent() {
             <p>Relevance filters and pagination will show here.</p>
           </div> */}
           <div className="productsSection">
-            <ProductList/>
+            <ProductList products = {products}/>
           </div>
        </div>
     </div>
