@@ -76,7 +76,7 @@ code {
 
 
 
-/* ///////////CSS FOR TOP SEARCHBAR SUBCATEGORIES//////////// */
+/* ///////////CSS FOR TOP SEARCHBAR SUBCATEGORIES  Menu show onclick left side//////////// */
 .category-container{
   background-color: #f2f2f2;
   display: flex;
@@ -87,21 +87,29 @@ code {
   left: 0;
   width: 100%;
   padding: 25px;
+
 }
-.category{
-  
+.category>span>a{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
 }
 
 .subcategory{
   background-color: #f2f2f2;
   padding: 5px;
   margin-left: 10px;
-  text-decoration: none;
   /* z-index: 1; */
 
 }
 .subcategory:hover{
   color: green;
+}
+
+.subcategory>span>a{
+  text-decoration: none;
+  color: black;
+  font-weight: 400;
 }
 /* ////Responsiveness///////////////// */
 

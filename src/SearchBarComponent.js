@@ -61,27 +61,27 @@ export default function SearchBarComponent() {
             onChange={handleCategoryChange}
           >
             <option value="">All Categories</option>
-            <option className="Catdrop" value="ppe">
-              {" "}
-              PPE{" "}
+            <option className="Catdrop" value={selectedCategory}>
+            {selectedCategory}
             </option>
-            <option className="Catdrop" value="wellness">
+            <option className="Catdrop" value={selectedCategory}>
               {" "}
               Wellness{" "}
             </option>
-            <option className="Catdrop" value="home_decor">
+            <option className="Catdrop" value={selectedCategory}>
               {" "}
               Home Decor{" "}
             </option>
-            <option className="Catdrop" value="miscellaneous">
+            <option className="Catdrop" value={selectedCategory}>
               {" "}
               Miscellaneous{" "}
             </option>
           </select>
         </div>
-        <div className="searchbutton" onClick={handleSearch}>
+        <div className="searchbutton" onClick={handleSearchTermChange}
+>
           <span>Search</span>
-          <i></i>
+          {/* <i></i> */}
         </div>
       </div>
       {showCatgory && <div className="category-container">
